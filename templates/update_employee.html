@@ -1,0 +1,11 @@
+<h1>Update Employee</h1>
+
+<form method="POST">
+    <p>Employee ID: <input type="number" name="emp_id" required></p>
+    <p>New Name: <input type="text" name="emp_name" required></p>
+    <p>New Department: <input type="text" name="department" required></p>
+    <p>New Salary: <input type="number" name="salary" required></p>
+    <button type="submit">Update</button>
+</form>
+
+<p><a href="{{ url_for('dashboard') }}">Back to Dashboard</a></p>

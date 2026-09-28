@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <h1>Welcome Admin!</h1>
+    <hr>
+
+    <h2>Employee Management System</h2>
+
+    <a href="{{ url_for('add_employee') }}">
+    <button>Add Employee</button></a>
+    <a href="{{ url_for('view_employees') }}">
+    <button>View Employees</button></a>
+    <a href="{{ url_for('update_employee') }}">
+    <button>Update Employee</button></a>
+    <a href="{{ url_for('delete_employee') }}">
+    <button>Delete Employee</button>
+    <a href="{{ url_for('logout') }}">
+    <button>Logout</button>
+
+</body>
+</html>

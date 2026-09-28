@@ -1,0 +1,20 @@
+<h1>Employees</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+    </tr>
+    {% for employee in employees %}
+    <tr>
+        <td>{{ employee[0] }}</td>
+        <td>{{ employee[1] }}</td>
+        <td>{{ employee[2] }}</td>
+        <td>{{ employee[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p><a href="{{ url_for('dashboard') }}">Back to Dashboard</a></p>
